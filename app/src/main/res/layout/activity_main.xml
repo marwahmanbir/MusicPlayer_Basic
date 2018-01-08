@@ -1,0 +1,44 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    android:gravity="center"
+    tools:context="com.example.android.mediaplayer.MainActivity">
+
+    <Button
+        android:id="@+id/play_button"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/play_arrow_black"
+        />
+
+    <Button
+        android:id="@+id/pause_button"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/pause_black"
+        android:layout_toRightOf="@id/play_button"/>
+
+    <Button
+        android:id="@+id/reset_button"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/skip_previous_black"
+        android:layout_below="@id/play_button"/>
+
+    <Button
+        android:id="@+id/stop_button"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/stop_black"
+        android:layout_toRightOf="@id/reset_button"
+        android:layout_below="@id/pause_button"/>
+
+</RelativeLayout>
